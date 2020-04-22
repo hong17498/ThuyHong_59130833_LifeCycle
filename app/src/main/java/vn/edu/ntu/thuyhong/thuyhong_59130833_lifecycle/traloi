@@ -1,0 +1,5 @@
+Câu 4: Khi bấm nút back thì onPause, onStop, onResume được gọi, sau khi mở lại ứng dụng thì onCreate, onStart, onResume được gọi.
+Câu 5: Khi bấm nút home thì onPause và onStop được gọi, sau khi mở lại ứng dụng thì onRestart, onStart, onResume được gọi.
+Câu 6: onPause, onStop, onResume, onCreate, onStart, onResume được gọi.
+Khi xoay màn hình thì nó sẽ tạo lại màn hình nên onCreate được gọi, lúc đó mã lệnh trong đó được chạy. Vì vậy thông tin của ứng
+dụng sẽ được khôi phục lại trạng thái hiển thị.
