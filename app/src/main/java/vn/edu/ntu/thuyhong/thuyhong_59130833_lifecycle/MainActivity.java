@@ -44,11 +44,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         Log.d("LifeCycle","onResume called");
-        Toast.makeText(getApplicationContext(),"onCreate called",Toast.LENGTH_LONG).show();
         txtTG = findViewById(R.id.txtTG);
         SimpleDateFormat spf = new SimpleDateFormat("HH:mm:ss");
         String strDate = spf.format(new Date());
         txtTG.setText(strDate);
+        Toast.makeText(getApplicationContext(),"onResume called",Toast.LENGTH_LONG).show();
     }
 
     @Override
@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d("LifeCycle","onResume called");
-        Toast.makeText(getApplicationContext(),"onCreate called",Toast.LENGTH_LONG).show();
+        Log.d("LifeCycle","onDestroy called");
+        Toast.makeText(getApplicationContext(),"onDestroy called",Toast.LENGTH_LONG).show();
 
     }
 }
